@@ -1,3 +1,63 @@
-body {
-  background-color: yellow;
+/*Gives one of my headings a different font-family than the primary font-family used in the page*/ 
+h1{
+  font-family: courier;
+  text-align: center;
+  font-size: 30pt;
 }
+
+/*Gives one of my headings a different font-family than the primary font-family used in the page*/ 
+h2{
+  font-family: fantasy;
+  font-size: 40pt;
+  color: green;
+}
+
+#name
+{
+	font-family: helvetica;
+	color: purple;
+}
+
+#schoolclubs
+{
+	font-family: timesnewroman;
+	text-align: center;
+	color: blue;
+}
+
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.second
+{
+	font-family: serif;
+	width: 40%;
+	margin-left: auto;
+	color: hotpink;
+}
+
+#photo1
+{
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  border:10px solid #021a40;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*Adds a background-color and base font-size and font-family to my web page */ 
+* {
+  background-color: lightblue;
+  font-size: 12pt;
+  font-family: monospace;
+}
+
+
