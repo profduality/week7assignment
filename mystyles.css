@@ -41,6 +41,7 @@ h2{
 	color: hotpink;
 }
 
+/*Centers the image in the figure tag, while adding a border and padding at the same time*/ 
 #photo1
 {
   padding-top: 50px;
