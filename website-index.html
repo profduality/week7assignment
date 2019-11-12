@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
+    <!-- 1st 2 lines perfect - doctype declaration & html opener, next up, you need an opener for the <head> section in which the <title> element will live, then make certain to close the </head> and open the content portion of your webpage with a <body> opener tag, before the <h1>. The <link href...> element belongs up in the <head>. Copying this code into the HTML Validator at https://validator.w3.org/ would help you to see this and debug it on your own. It's a good idea because while Chrome may be forgiving, not all browsers that reach your website will "forgive" the invalid html & thus you could have bugs in your otherwise awesome webpage! :) -->
+<head>
 <title> Jack Robert Clonan: The First Teaching Superhero </title>
-<h1>Introducing:</h1>
-<header>
+<!-- after creating the <head> section, I moved your external stylesheet code into the <head> so your markup will valiate and it will all work well. -->
+
 <!-- Below is the code that links my external stylesheet-->
 <link rel="stylesheet" type="text/css" href=mystyles.css>
-
-
+</head>
+<body>
+<h1>Introducing:</h1>
+<header>
 
 <!-- Below is one example of in-line HTML element styling-->
 <h1 style="text-align:center;font-family:arial;font-size:20pt;color:purple"> Jack Robert Clonan </h1>
@@ -16,7 +20,8 @@
 <h3 style="text-align:center;font-family:arial;font-size:20pt;color:red"> The First Teaching Superhero </h3>
 </header>
 
-<body>
+<!-- I know that it's confusing now that the html5 spec offers us the <header> tag, but it is not the same as the <head> element, which is a crucial section in the webpage that holds the stylesheet, script, title, and any metadata information in it. The confusingly-named <header> is designed to be a section of the content part of the webpage, inserted after the <body> opens, so I fixed that up, with the </head> closing and the <body> opening immediately thereafter. The <head> element is different than the <header> element. For more on that, see: https://teamtreehouse.com/community/what-is-the-different-between-head-and-header-again-and-what-goes-inside-each. I had to comment out the <body> that was positioned here as a result. -->
+<!-- Great job with HTML commenting, btw! -->
 <!-- Below is styling an HTML element using both an id and class-->
 <p id="name" class="center"> My name is Jack Robert Clonan, and I am a Technology & Engineering Education (K-12) major at Central Connecticut State University (CCSU).</p>
 
@@ -31,15 +36,13 @@
 <p> Our custom "learning superheroes" named Professor Duality and Journeyman will surely get kids excited to learn again.</p>
 <p> Imagine Professor Duality guiding you through the fundamentals of coding alongside a epic superhero story! </p>
 <br>
-</body>
-
+<!-- </body> - the body closing tag happens immediately before the closing </html> tag. Use the HTML Validator to debug your code automatically & it will alert you to this issue. I've commented this one out & will add the </body> in the correct position below. -->
 <footer>
-<h2 style="text-align:center"> The World is in Our Hands! </h2>
-
 <figure>
- <img id="photo1" src="https://live.staticflickr.com/8181/28777163450_220686de1e_b.jpg" alt="Technology Guy" width="1024" height="643">
- <figcaption> Figure 1-"Your ancestors called it magic, but you call it science. I come from a land where they are one and the same. -Thor Odinson (2011) " </figcaption>
+    <figcaption> Figure 1-"Your ancestors called it magic, but you call it science. I come from a land where they are one and the same. -Thor Odinson (2011) " </figcaption>
 </figure>
 
 </footer>
+<!-- I love this webpage, its content & its styling - excellent job! As you go "pro," don't forget to validate and debug your html - (at https://validator.w3.org/, for example)   :) -->
+</body>
 </html>
